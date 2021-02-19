@@ -1,0 +1,19 @@
+<p>todo works!</p>
+<div class="row">
+    <div class="col-sm -6" >
+        <div><input type="text" name="" id="" value="{{name}}" (input)="getName($event)">
+            </div>
+            <button (click)="saveArray()" class="btn btn-primary">+</button>
+            <li *ngFor="let i of todo">
+                {{i}}
+                <button (click)="removeD(i)">delete</button>
+                <button (click)="movE(i)"> move</button>
+            </li>
+            
+        
+    </div>
+    <div class="col-sm-6">
+        <li *ngFor="let i of mov">{{i}}</li>
+        
+    </div>
+</div>
